@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet/header.css">
+    <title>Kyle Mace Blog</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="all-articles">
+            <article class="article-3">
+                <a class="article-title" href="#"><strong>Religion from an anthropological perspective</strong></a>
+                <p class="article-synopsis">What does the fact that religion emerged in the absence of science tell us about the way
+                    in which we fundamentally perceieve the world?</p>
+                <div class="article-date">17/08/2021 ⋅ 15 min read</div>
+            </article>
+            <article class="article-1">
+                <a class="article-title" href="blog-posts\social-media-effects.html"><strong>The Ramifications of Social Media</strong></a>
+                <p class="article-synopsis">I speculate as to how certain neurochemicals play a role in, and which societal trends can be attributed to, a growing overconsumption of social media.</p>
+                <div class="article-date">04/09/2021 ⋅ 5 min read</div>
+            </article>
+            <article class="article-2">
+                <a class="article-title" href="blog-posts\can-ai-do-anything-we-can.html"><strong>Is there anything humans can do that A.I. can't?</strong></a>
+                <p class="article-synopsis">I explore the rising concern as to whether there exists any human faculty which cannot be conceivably replaced by A.I.</p>
+                <div class="article-date">07/09/2021 ⋅ 2 min read</div>
+            </article>  
+        </div>
+    </div>
+    <!-- 1000px for wrapper is 52.5%-->
+</body>
+</html>
+
+
+<style>
+    .wrapper{
+        margin: 0 auto;
+        width: 60%;
+    }
+    .all-articles article{
+        background-color: lightblue;
+        margin: 0.5% 0 5% 0;
+        height: 400px;
+        padding: 1% 3% 1% 3%;
+        position: relative;
+    }
+    .article-title{
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    .article-title:hover{
+        color: #004F6D;
+    }
+    .article-synopsis{
+        font-size: 20px;
+        color: white;
+        margin-top: 0.5%;
+    }
+    .article-date{
+        margin-top: 100px;
+        bottom: 4%;
+        position: absolute;
+        font-size: 18px;
+        color: white;
+    }
+    .article-1{
+        background-image: url(images/firmbee-com-SpVHcbuKi6E-unsplash.jpg);
+        background-size: cover;
+    }
+    .article-2{
+        background-image: url(images/take2.jpg);
+        background-size: cover;
+    }
+    .article-3{
+        background-image: url(images/lukas-meier-aAxn9pYE8L0-unsplash.jpg);
+        background-size: cover;
+    }
+</style>
